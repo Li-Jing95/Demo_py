@@ -34,7 +34,8 @@ im = Image.open('D:\py-pic\\frame.png')
 #灰度图像
 imgry = im.convert('L')
 imgry.save('D:\py-pic\\out.png')
-imgry.show()
+time.sleep(2)
+# imgry.show()
 #二值化处理
 # threshold = 245 #大于阀值为黑色
 # table = []
@@ -72,7 +73,8 @@ for x in range(1, w - 1):
             if black_point < 1:
                 images.putpixel((x, y), 255)
             black_point = 0
-images.show()
+# images.show()
+time.sleep(2)
 images.save('D:\py-pic\\frame1.png')
 #将处理后的图片转成文字
 
@@ -86,6 +88,7 @@ print("text1:" + result_four)
 # driver.find_element_by_id('validatecode').clear()  # 清空输入框
 driver.find_element_by_id('validatecode').send_keys(result_four)  # 自动敲入密码
 driver.find_element_by_id('login').click()  # 点击密码输入框
-time.sleep(20)
+# time.sleep(10)
 
-
+# driver.find_element_by_xpath("/html/body/div[3]/div[1]/div/div/div[2]/table/tbody/tr/td/div/div[1]/div[4]/div").click()
+# driver.find_element_by_xpath("/html/body/div[3]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/ul/li[3]/div/a/div[2]/span[2]/span/span[1]").click()
