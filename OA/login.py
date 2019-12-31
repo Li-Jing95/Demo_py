@@ -10,8 +10,8 @@ driver.get("http://oa.esafenet.com:8080")
 driver.maximize_window()
 time.sleep(1)
 
-username = "lijing"  # 请替换成你的用户名
-password = "13223326073.lj"  # 请替换成你的密码
+username = "****"  # 请替换成你的用户名
+password = "******"  # 请替换成你的密码
 
 driver.find_element_by_id('loginid').click()  # 点击用户名输入框
 driver.find_element_by_id('loginid').clear()  # 清空输入框
